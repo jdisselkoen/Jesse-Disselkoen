@@ -1,0 +1,129 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Fitness Journey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #222;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .merchandise {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Fitness Journey</h1>
+        <p>Welcome to my world of fitness and wellness!</p>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>About Me</h2>
+            <p>Hi, I'm [Your Name], a fitness influencer passionate about helping others achieve their health and fitness goals. With years of experience in the industry, I'm dedicated to providing you with the tools, motivation, and support you need to transform your life.</p>
+        </section>
+
+        <section class="journey">
+            <h2>My Fitness Journey</h2>
+            <p>I believe that fitness is more than just physical exercise; it's a lifestyle. Through my own journey, I've learned the importance of consistency, balance, and self-care. Join me as I share my tips, tricks, and personal experiences to inspire and empower you on your own path to wellness.</p>
+        </section>
+
+        <section class="merchandise">
+            <h2>Shop My Merchandise</h2>
+            <p>Check out my exclusive line of fitness apparel and accessories designed to keep you motivated and looking great during your workouts. From comfortable activewear to stylish water bottles, there's something for everyone in my store.</p>
+            <a href="#">Shop Now</a>
+        </section>
+
+        <section class="contact">
+            <h2>Connect With Me</h2>
+            <p>Ready to take your fitness journey to the next level? Let's connect! Follow me on social media for daily inspiration, workout tips, and behind-the-scenes glimpses into my life as a fitness influencer.</p>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Fitness Journey. All rights reserved.</p>
+    </footer>
+</body>
+</html>
